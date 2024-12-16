@@ -43,6 +43,7 @@ section {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  
 }
 
 /* UTILITY CLASSES */
@@ -453,8 +454,9 @@ a:hover {
   border-radius: 5px;
   box-shadow: var(--box-shadow);
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 3rem 2rem;
+  margin-bottom: 20px;
 }
 
 .task-form {

@@ -1,7 +1,7 @@
 const express = require("express")
 const mongoose = require("mongoose")
-const Task = require("./model/taskModel.js")
 const dotenv = require("dotenv").config()
+const Task = require("./model/taskModel.js")
 const taskRoutes = require('./routes/taskRoutes.js')
 const cors = require("cors")
 
@@ -12,7 +12,7 @@ const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'http://localhost:3001' }));
 
 app.use(taskRoutes)
 //routes
@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 
 
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8000
 
 mongoose
     .connect(process.env.MONGO_URI)
